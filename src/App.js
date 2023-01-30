@@ -1,5 +1,7 @@
 import React from "react";
-import './App.css'
+import './App.css';
+import IndirectFather from "./components/indirect/IndirectFather";
+import InforUsuario from "./components/condicional/InforUsuario";
 import Students from "./components/studentyList/Students";
 import FamiliaMembros from "./components/memberfamily/MemberFamily";
 import Familia from "./components/memberfamily/Family";
@@ -22,9 +24,19 @@ export default function App() {
       <Card title="#03 Lista de Alunos" colorTitle="green" colorCard="3px solid green">
         <Students></Students>
       </Card>
-      <Card title="#04 Tabela">
-        
+      <Card title="#04 Informações de usuário" colorTitle="green" colorCard="3px solid green">
+        <InforUsuario usuario={{nome: "Carlos"}}/>
+        <InforUsuario usuario={{nome: ""}}/>
       </Card>
-      </div>
+      <Card title="#04 Informações de usuário" colorTitle="green" colorCard="3px solid green">
+        <IndirectFather/>
+      </Card>
+      <Card title="#04 Informações de usuário">
+      </Card>
+      <Card title="#04 Informações de usuário">
+      </Card>
+      <Card title="#04 Informações de usuário">
+      </Card>
+    </div>
   )
 }
