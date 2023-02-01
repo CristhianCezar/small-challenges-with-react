@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Input from "./components/input/Input";
 import IndirectFather from "./components/indirect/IndirectFather";
 import InforUsuario from "./components/condicional/InforUsuario";
 import Students from "./components/studentyList/Students";
@@ -28,14 +29,15 @@ export default function App() {
         <InforUsuario usuario={{nome: "Carlos"}}/>
         <InforUsuario usuario={{nome: ""}}/>
       </Card>
-      <Card title="#04 Informações de usuário" colorTitle="green" colorCard="3px solid green">
+      <Card title="#05 Estados de componentes" colorTitle="green" colorCard="3px solid green">
         <IndirectFather/>
       </Card>
-      <Card title="#04 Informações de usuário">
+      <Card title="#06 Componentes controlados" colorTitle="green" colorCard="3px solid green">
+        <Input/>
       </Card>
-      <Card title="#04 Informações de usuário">
+      <Card title="#07">
       </Card>
-      <Card title="#04 Informações de usuário">
+      <Card title="#08">
       </Card>
     </div>
   )
