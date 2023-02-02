@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Contador from "./components/contador/Contador";
 import Input from "./components/input/Input";
 import IndirectFather from "./components/indirect/IndirectFather";
 import InforUsuario from "./components/condicional/InforUsuario";
@@ -36,6 +37,7 @@ export default function App() {
         <Input/>
       </Card>
       <Card title="#07">
+        <Contador passoInicial={5} numeroInicial={10}/>
       </Card>
       <Card title="#08">
       </Card>
