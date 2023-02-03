@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import MegaSena from "./components/megaSena/MegaSena";
 import Contador from "./components/contador/Contador";
 import Input from "./components/input/Input";
 import IndirectFather from "./components/indirect/IndirectFather";
@@ -36,10 +37,11 @@ export default function App() {
       <Card title="#06 Componentes controlados" colorTitle="green" colorCard="3px solid green">
         <Input/>
       </Card>
-      <Card title="#07">
+      <Card title="#07 Contador" colorTitle="green" colorCard="3px solid green">
         <Contador passoInicial={5} numeroInicial={10}/>
       </Card>
-      <Card title="#08">
+      <Card title="#08 Gerador de números" colorTitle="green" colorCard="3px solid green">
+        <MegaSena/>
       </Card>
     </div>
   )
